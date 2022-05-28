@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- enlace para los estilos CSS.-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title></title>
+  </head>
+  <body>
+    <!-- CAROUSEL  -->
+    <!-- 'id' especifica una lista ordenada, 'class' definimos un carrusel con transición CSS
+        y animación -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <!--'carousel-inner' diapositiva-->
+      <div class="carousel-inner">
+        <!--Elementos individuales-->
+        <div class="carousel-item active">
+          <img
+            src="https://www.veterinariadelbosque.com/images/banner-servicios.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.veterinariadelbosque.com/images/banner-tour-virtual.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.veterinariadelbosque.com/images/banner-mascota.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- botones de desplazamiento  -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- NAVAR -->
+    <!-- definimos que es un navar y su color -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <!-- contenedor de ancho completo -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">VET365 Clínica Veterinaria</a>
+        <!-- botones-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conócenos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Especialidades</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Servicios
+              </a>
+              <!-- menú -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Círugias</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Piezas de sellado y corte</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Rayos X</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- formulario -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--ESPACIO-->
+
+    <br />
+
+    <!-- LÍNEA -->
+    <hr />
+    <!-- BLOCKQOUTE -->
+    <!-- alineamos al centro -->
+    <figure class="text-center">
+      <!-- definimos que es un blockqoute -->
+      <blockquote class="blockquote">
+        <!-- agregamos un parrafo-->
+        <p class="lead">
+          VET365 es una clínica veterinaria moderna y equipada con tecnología de
+          vanguardia. Contamos con los mejores especialistas y cirujanos
+          veterinarios de la ciudad de Quito en medicina canina, felina y
+          especies exóticas. Nuestro principal objetivo es mejorar la calidad de
+          vida de tu mascota y de la fauna silvestre a través de un servicio
+          integral. Por esta razón, trabajamos con buenas prácticas y protocolos
+          desarrollados sobre la base de la medicina humana. Además de nuevas
+          técnicas en cirugía apoyadas con equipamiento tecnológico que
+          garantizan óptimos resultados.
+        </p>
+      </blockquote>
+      <!-- subtítulo del elemento padre-->
+      <figcaption class="blockquote-footer">
+        Clínica veterinaria <cite title="Source Title">VET365</cite>
+      </figcaption>
+    </figure>
+    <hr />
+    <!-- CARDS-->
+    <!-- agrupamos los cards-->
+    <div  class="input-group">
+      <div class="card mb-8" style="max-width: 490px">
+        <!-- cuadro-->
+        <div class="row g-0">
+          <!-- tamaño-->
+          <div class="col-md-4">
+            <!-- imágen-->
+            <img
+              src="https://vet365.med.ec/wp-content/uploads/2020/04/paciente003-600x800.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <!-- columna-->
+          <div class="col-md-8">
+            <!-- cuerpo del cuadro-->
+            <div class="card-body">
+              <!-- título del cuadro-->
+              <h5 class="card-title">Nuestros Pacientes</h5>
+              <!-- texto del cuadro-->
+              <p class="card-text">
+                Para nosotros lo primordial son nuestros pacientes, su salud, su
+                felicidad. Para nosotros ellos son parte de nuestras vidas, cada
+                dia se roban un pedazo de nuestros corazones, no hay mejor
+                clínica que VET365 porque primero son nuestros pacientes.
+              </p>
+              <!-- botón-->
+              <a href="#" class="btn btn-dark">Acercate!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+     
+      <div class="card mb-2" style="max-width: 900px">
+        <!-- cuadro-->
+        <div class="row g-0">
+          
+          <!-- tamaño-->
+          <div lass="col-md-2 ml-auto">
+            <!-- cuerpo del cuadro-->
+              <form class="form-horizontal" tyle="max-width: 200px">
+                <div class="form-group">
+                  <label class="col-lg-8 control-label">Nombres</label>
+                  <div class="col-lg-40">
+                    <input type="text" class="form-control" name="nombre" />
+                  </div>
+                </div>
+              
+                <div class="form-group">
+                  <label class="col-lg-8 control-label">Apellidos</label>
+                  <div class="col-lg-40">
+                    <input type="text" class="form-control" name="apellido" />
+                  </div>
+                </div>
+              
+                <div class="form-group">
+                  <label class="col-lg-8 control-label">Correo Electrónico</label>
+                  <div class="col-lg-40">
+                    <input type="text" class="form-control" name="email" />
+                  </div>
+                </div>
+              
+                <div class="form-group">
+                  <label class="col-lg-8 control-label">Teléfono Celular</label>
+                  <div class="col-lg-40">
+                    <input type="text" class="form-control" name="telefono_cel" />
+                  </div>
+                </div>
+              
+                <div class="form-group">
+                  <div class="">
+                    <button type="submit" class="btn btn-dark">Registrarse</button>
+                  </div>
+                </div>
+              
+              </form>
+            </div>
+          </div>
+        </div>
+              <div class="card mb-8" style="max-width: 490px">
+                <!-- cuadro-->
+                <div class="row g-0">
+                  <!-- tamaño-->
+                  <div class="col-md-4">
+                    <!-- imágen-->
+                    <img
+                      src="https://vet365.med.ec/wp-content/uploads/2020/04/paciente004.jpg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <!-- columna-->
+                  <div class="col-md-8">
+                    <!-- cuerpo del cuadro-->
+                    <div class="card-body">
+                      <!-- título del cuadro-->
+                      <h5 class="card-title">HACEMOS TODO LO NECESARIO PARA TU MASCOTA</h5>
+                      <!-- texto del cuadro-->
+                      <p class="card-text">
+                        Puedes confiar en nosotros, tu mascota tenra el mejor cuidado,
+                        somos una familia muy grande y amamos a tus mascotas.
+                      </p>
+                      <br>
+                      <br>
+
+                      <!-- botón-->
+                      <a href="#" class="btn btn-dark">Acercate!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- NAV-->
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      <br>
+        <div class="card-body">
+          <h5 class="card-title">Clínica veterinaria VET365</h5>
+          <p class="card-text">Acercate a nuestro local ya!</p>
+          <a href="#" class="btn btn-dark">Contactanos!</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
